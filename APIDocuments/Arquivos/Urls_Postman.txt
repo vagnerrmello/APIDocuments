@@ -1,0 +1,29 @@
+Para execução e testes foi usado o "Postaman"
+Requests utilizadas:
+
+GET: https://localhost:44316/api/Usuarios/
+GET: https://localhost:44316/api/Usuarios/4
+GET: https://localhost:44316/api/Usuarios/documentos
+POST: https://localhost:44316/api/Usuarios
+
+BODY -> ROW -> JSON
+    {
+        "nome": "testetesteteste",
+        "email": "teste@gmail.com",
+        "password": "12121212",
+        "ativo": false
+    }
+
+
+PUT: https://localhost:44316/api/Usuarios/6
+BODY -> ROW -> JSON
+  {
+    "usuarioId": 6,
+    "nome": "testetestetes",
+    "email": "teste2@gmail.com",
+    "password": "23232323",
+    "ativo": true
+}
+
+
+DELETE: https://localhost:44316/api/Usuarios/6
